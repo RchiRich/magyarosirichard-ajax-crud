@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajax-Crud</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Adatok kezelése</h2>
+      <div class="mb-4">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>JobTitle</th>
+              <th>Location</th>
+              <th>CompanyName</th>
+            </tr>
+          </thead>
+          <tbody id="peopleTable">
+            
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>Felvétel / Módosítás</h3>
+        <form id="dataForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" placeholder="Teljes neve" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="name" class="form-label">JobTitle</label>
+                <input type="text" id="JobTitle" placeholder="Foglalkozás" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="location" class="form-label">Location</label>
+              <input type="text" id="location" placeholder="Város ahol lakik" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">Felvétel</button>
+            <button type="button" class="btn btn-secondary" id="clearBtn">Mégse</button>
+        </form>
+    </div>
+</div>
+    </div> 
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
